@@ -62,6 +62,9 @@ header nav ul {
 header nav ul li {
   margin: 0 20px;
 }
+header nav ul li a:hover {
+  color: #DBAC5B;
+}
 header nav ul li a {
   color: #3F3F3F;
   font-weight: 540;
