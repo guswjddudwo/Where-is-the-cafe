@@ -1,0 +1,85 @@
+body {
+  /* 기본(공통)스타일 */  
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.4;
+  /* color: #333;   */
+}
+
+a{
+  /* 밑줄 제거 */
+  text-decoration: none;
+}
+
+.inner {
+  /* 가운데 정렬 */
+  width: 1100px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #EEDAB8;
+  /* background-color: rgb(255, 255, 255); */
+}
+img {
+  /* 이미지가 인라인 요소라서 발생하는 문자기준선(baseline) 아래의 공간을 제거하기위해 
+  img를 레이아웃 요소로 쓰기위해*/
+  display: block;
+}
+
+header {
+  /* background-color: #EEDAB8; */
+
+  /* 고정된 헤더 만들기*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  /* border-bottom: 1px solid #c8c8c8; */
+}
+header .logo {
+  position: absolute;
+  top: 10%;
+  left: 5px;
+}
+header h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #DBAC5B;  
+}
+
+header nav {
+  position: absolute;
+  margin: 0 auto;
+  top: 32%;
+  right: 35%;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  color: #3F3F3F;
+  font-weight: 540;
+}
+
+header .btn {
+  position: absolute;
+  top: 30%;
+  right: 45px;
+}
+
+.main > div {
+  width: 100%;
+  position: absolute;
+}
+.main__imge{
+  position: absolute;
+  opacity: .8;
+  width: 700px;
+  height: 730px;
+}
