@@ -11,10 +11,14 @@ a{
   text-decoration: none;
 }
 
-.inner {
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   /* 가운데 정렬 */
-  width: 1100px;
-  height: 50px;
+  width: 1723px;
+  height: 80px;
   margin: 0 auto;
   position: relative;
   background-color: #EEDAB8;
@@ -33,56 +37,79 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 9;
-  /* border-bottom: 1px solid #c8c8c8; */
+  z-index: 9; 
 }
 header .logo {
-  position: absolute;
+  /* position: absolute;
   top: 10%;
-  left: 5px;
+  left: 4%; */
 }
 header h1 {
-  font-size: 26px;
+  font-size: 35px;
   font-weight: 600;
   color: #DBAC5B;  
 }
-
-header nav {
-  position: absolute;
-  margin: 0 auto;
-  top: 32%;
-  right: 35%;
+/* 메인 메뉴 */
+header .main--menu {
+  /* position: absolute;
+  top: 25px;
+  left: 32%; */
 }
 
-header nav ul {
+header .main--menu > ul {
   display: flex;
-  align-items: center;
 }
 
-header nav ul li {
-  margin: 0 20px;
+header nav > ul > li {
+  margin: 0 30px;
+  position: relative;
 }
-header nav ul li a:hover {
+header nav > ul > li > a:hover {
   color: #DBAC5B;
 }
-header nav ul li a {
+header nav > ul > li > a {
   color: #3F3F3F;
-  font-weight: 540;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 24px;
+}
+/* 드롭다운 */
+.sub-menu {
+  position: absolute;
+  top: 51px;
+  background-color: #EEDAB8;
+  z-index: 1;  
+}
+.sub-menu > li {
+  color: #3F3F3F;
+  padding: 5px 12px;
 }
 
 header .btn {
-  position: absolute;
+  /* position: absolute;
   top: 30%;
-  right: 45px;
+  right: 5%; */
+}
+header .btn span {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0 10px;
 }
 
-.main > div {
-  width: 100%;
-  position: absolute;
+.main {
+  position: relative;
 }
-.main__imge{
+.image__item{
+  max-width: 100%;  
   position: absolute;
-  opacity: .8;
-  width: 700px;
-  height: 730px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.main img {
+  width: 1903px;
+  height: 850px;
+  opacity: .8; 
+
 }
