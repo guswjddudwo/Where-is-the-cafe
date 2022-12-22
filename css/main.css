@@ -1,28 +1,28 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;900&family=Pangolin&family=Roboto:wght@500;900&display=swap'); */
 body {
   /* 기본(공통)스타일 */  
   font-size: 16px;
   font-weight: 100;
   line-height: 1.4;
-  /* color: #333;   */
+  background-color: #EEDAB8;
 }
 
 a{
   /* 밑줄 제거 */
-  text-decoration: none;
+  text-decoration: none;  
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 header .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* 가운데 정렬 */
   width: 1723px;
   height: 80px;
   margin: 0 auto;
   position: relative;
-  background-color: #EEDAB8;
-  /* background-color: rgb(255, 255, 255); */
+  border-radius: 4px;  
 }
 img {
   /* 이미지가 인라인 요소라서 발생하는 문자기준선(baseline) 아래의 공간을 제거하기위해 
@@ -31,30 +31,20 @@ img {
 }
 
 header {
-  /* background-color: #EEDAB8; */
-
-  /* 고정된 헤더 만들기*/
+  background-color: #EEDAB8;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 9; 
 }
-header .logo {
-  /* position: absolute;
-  top: 10%;
-  left: 4%; */
-}
+
 header h1 {
   font-size: 35px;
   font-weight: 600;
   color: #DBAC5B;  
 }
 /* 메인 메뉴 */
-header .main--menu {
-  /* position: absolute;
-  top: 25px;
-  left: 32%; */
-}
+
 
 header .main--menu > ul {
   display: flex;
@@ -74,22 +64,35 @@ header nav > ul > li > a {
   padding: 8px 24px;
 }
 /* 드롭다운 */
-.sub-menu {
-  position: absolute;
-  top: 51px;
-  background-color: #EEDAB8;
-  z-index: 1;  
-}
-.sub-menu > li {
-  color: #3F3F3F;
-  padding: 5px 12px;
+/* .hideen__menu  */
+header nav > ul > li:hover .sub-menu {
+  display: block;
 }
 
-header .btn {
-  /* position: absolute;
-  top: 30%;
-  right: 5%; */
+.sub-menu {
+  width: 100%;
+  position: absolute;
+  top: 51px;
+  left: 20px;
+  background-color: #EEDAB8;
+  border-radius: 0 0 4px 4px;
+  z-index: 1;  
+  /* display: none; */
 }
+.sub-menu > ul {
+  display: flex;
+}
+
+.sub-menu > a > li {
+  padding: 5px 12px;
+  color: #3F3F3F;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sub-menu > a > li:hover {
+  color: #DBAC5B;
+}
+
 header .btn span {
   font-size: 30px;
   cursor: pointer;
@@ -99,17 +102,17 @@ header .btn span {
 .main {
   position: relative;
 }
-.image__item{
-  max-width: 100%;  
-  position: absolute;
-  background-position: center;
+.image__item {
+  height: 750px;
+  background-image: url("/images/visual1.jpg");
   background-repeat: no-repeat;
-  
+  background-position: center;
+  background-size: cover;
+  opacity: .8;
 }
 
-.main img {
-  width: 1903px;
-  height: 850px;
-  opacity: .8; 
-
+/* cafe place */
+.swiper {
+  width: 600px;
+  height: 300px;
 }
