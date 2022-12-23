@@ -1,0 +1,136 @@
+body {
+  /* 기본(공통)스타일 */
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+a {
+  /* 밑줄 제거 */
+  text-decoration: none;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1723px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 4px;
+}
+img {
+  /* 이미지가 인라인 요소라서 발생하는 문자기준선(baseline) 아래의 공간을 제거하기위해 
+  img를 레이아웃 요소로 쓰기위해*/
+  display: block;
+}
+
+header {
+  background-color: #eedab8;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+header h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: #dbac5b;
+}
+/* 메인 메뉴 */
+
+header .main--menu > ul {
+  display: flex;
+}
+
+header nav > ul > li {
+  margin: 0 30px;
+  position: relative;
+}
+header nav > ul > li > a:hover {
+  color: #dbac5b;
+}
+header nav > ul > li > a {
+  color: #3f3f3f;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 24px;
+}
+
+/* 드롭다운 */
+header nav > ul > li:hover .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  width: 100%;
+  position: absolute;
+  top: 230%;
+  z-index: 1;
+  /* display: none; */
+}
+.sub__inner {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.sub__inner > ul {
+  width: 100%;
+  background-color: #eedab8;
+  border-radius: 0 0 4px 4px;
+  z-index: 1;
+  margin: 0 10px;
+  /* display: flex; */
+}
+
+.sub__inner > li > a {
+  padding: 50px 50px;
+  color: #3f3f3f;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sub__inner > ul > li:hover {
+  color: #dbac5b;
+  cursor: pointer;
+}
+.sub__inner h4 {
+  font-weight: 550;
+  color: brown;
+}
+
+header .btn span {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+/* contents 1 */
+.main {
+  position: relative;
+  text-align: center;
+}
+.image__item {
+  height: 750px;
+  background-image: url("/images/visual1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+.image__item > img {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 375px;
+  right: 375px;
+}
+
+/* cafe place */
+.swiper {
+  width: 600px;
+  height: 300px;
+}
