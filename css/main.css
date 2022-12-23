@@ -5,7 +5,6 @@ body {
   font-size: 16px;
   font-weight: 100;
   line-height: 1.4;
-  background-color: #EEDAB8;
 }
 
 a{
@@ -39,8 +38,8 @@ header {
 }
 
 header h1 {
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 45px;
+  font-weight: 900;
   color: #DBAC5B;  
 }
 /* 메인 메뉴 */
@@ -77,7 +76,7 @@ header nav > ul > li:hover .sub-menu {
   background-color: #EEDAB8;
   border-radius: 0 0 4px 4px;
   z-index: 1;  
-  /* display: none; */
+  display: none;
 }
 .sub-menu > ul {
   display: flex;
@@ -101,6 +100,7 @@ header .btn span {
 
 .main {
   position: relative;
+  text-align: center;
 }
 .image__item {
   height: 750px;
@@ -109,6 +109,15 @@ header .btn span {
   background-position: center;
   background-size: cover;
   opacity: .8;
+}
+.image__item > img {
+  position: absolute;
+  margin: 0 auto;
+  top: 300px;
+  left: 375px;
+  right: 375px;
+
+  
 }
 
 /* cafe place */
