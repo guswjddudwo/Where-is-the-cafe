@@ -67,33 +67,39 @@ header nav > ul > li:hover .sub-menu {
 
 .sub-menu {
   width: 100%;
-  /* height: 300px; */
   position: absolute;
-  top: 300%;
-
-  border-radius: 0 0 4px 4px;
+  top: 230%;
   z-index: 1;
   /* display: none; */
+}
+.sub__inner {
+  width: 100%;
+  position: absolute;
+  text-align: center;
 }
 
 .sub__inner > ul {
   width: 100%;
   background-color: #eedab8;
-  text-align: center;
-  position: absolute;
+  border-radius: 0 0 4px 4px;
   z-index: 1;
   margin: 0 10px;
-  display: flex;
+  /* display: flex; */
 }
 
-.sub-menu > a > li {
+.sub__inner > li > a {
   padding: 50px 50px;
   color: #3f3f3f;
   font-size: 15px;
   font-weight: 500;
 }
-.sub-menu > a > li:hover {
+.sub__inner > ul > li:hover {
   color: #dbac5b;
+  cursor: pointer;
+}
+.sub__inner h4 {
+  font-weight: 550;
+  color: brown;
 }
 
 header .btn span {
@@ -102,6 +108,7 @@ header .btn span {
   padding: 0 10px;
 }
 
+/* contents 1 */
 .main {
   position: relative;
   text-align: center;
