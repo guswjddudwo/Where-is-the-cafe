@@ -68,28 +68,26 @@ header nav > ul > li:hover .sub-menu {
 .sub-menu {
   width: 100%;
   position: absolute;
-  top: 230%;
+  top: 45px;
   z-index: 1;
   display: none;
 }
 .sub__inner {
   width: 500px;
   position: absolute;
-  text-align: center;
 }
 
 .sub__inner > ul {
-  width: 200px;
   position: absolute;
   background-color: #eedab8;
   border-radius: 0 0 4px 4px;
   z-index: 1;
   margin: 0 10px;
-  /* display: flex; */
 }
 
 .sub__inner ul > li {
   margin: 5px 5px;
+  text-align: center;
 }
 
 .sub__inner ul > li > a {
