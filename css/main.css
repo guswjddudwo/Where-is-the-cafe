@@ -1,17 +1,14 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;900&family=Pangolin&family=Roboto:wght@500;900&display=swap'); */
 body {
-  /* 기본(공통)스타일 */  
+  /* 기본(공통)스타일 */
   font-size: 16px;
   font-weight: 100;
   line-height: 1.4;
-  background-color: #EEDAB8;
 }
 
-a{
+a {
   /* 밑줄 제거 */
-  text-decoration: none;  
-  font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: none;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 header .inner {
@@ -22,7 +19,7 @@ header .inner {
   height: 80px;
   margin: 0 auto;
   position: relative;
-  border-radius: 4px;  
+  border-radius: 4px;
 }
 img {
   /* 이미지가 인라인 요소라서 발생하는 문자기준선(baseline) 아래의 공간을 제거하기위해 
@@ -31,20 +28,19 @@ img {
 }
 
 header {
-  background-color: #EEDAB8;
+  background-color: #eedab8;
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 9; 
+  z-index: 9;
 }
 
 header h1 {
-  font-size: 35px;
-  font-weight: 600;
-  color: #DBAC5B;  
+  font-size: 45px;
+  font-weight: 900;
+  color: #dbac5b;
 }
 /* 메인 메뉴 */
-
 
 header .main--menu > ul {
   display: flex;
@@ -55,16 +51,16 @@ header nav > ul > li {
   position: relative;
 }
 header nav > ul > li > a:hover {
-  color: #DBAC5B;
+  color: #dbac5b;
 }
 header nav > ul > li > a {
-  color: #3F3F3F;
+  color: #3f3f3f;
   font-size: 14px;
   font-weight: 600;
   padding: 8px 24px;
 }
+
 /* 드롭다운 */
-/* .hideen__menu  */
 header nav > ul > li:hover .sub-menu {
   display: block;
 }
@@ -72,25 +68,42 @@ header nav > ul > li:hover .sub-menu {
 .sub-menu {
   width: 100%;
   position: absolute;
-  top: 51px;
-  left: 20px;
-  background-color: #EEDAB8;
-  border-radius: 0 0 4px 4px;
-  z-index: 1;  
-  /* display: none; */
+  top: 230%;
+  z-index: 1;
+  display: none;
 }
-.sub-menu > ul {
-  display: flex;
+.sub__inner {
+  width: 500px;
+  position: absolute;
+  text-align: center;
 }
 
-.sub-menu > a > li {
-  padding: 5px 12px;
-  color: #3F3F3F;
-  font-size: 15px;
-  font-weight: 500;
+.sub__inner > ul {
+  width: 200px;
+  position: absolute;
+  background-color: #eedab8;
+  border-radius: 0 0 4px 4px;
+  z-index: 1;
+  margin: 0 10px;
+  /* display: flex; */
 }
-.sub-menu > a > li:hover {
-  color: #DBAC5B;
+
+.sub__inner ul > li {
+  margin: 5px 5px;
+}
+
+.sub__inner ul > li > a {
+  color: #3f3f3f;
+  font-size: 14px;
+  font-weight: 540;
+}
+.sub__inner > ul > li:hover {
+  color: #dbac5b;
+  cursor: pointer;
+}
+.sub__inner h4 {
+  font-weight: 550;
+  color: brown;
 }
 
 header .btn span {
@@ -99,8 +112,10 @@ header .btn span {
   padding: 0 10px;
 }
 
+/* contents 1 */
 .main {
   position: relative;
+  text-align: center;
 }
 .image__item {
   height: 750px;
@@ -108,11 +123,22 @@ header .btn span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  opacity: .8;
+  opacity: 0.8;
+}
+.image__item > img {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 375px;
+  right: 375px;
 }
 
 /* cafe place */
-.swiper {
-  width: 600px;
-  height: 300px;
+.cafe__place {
+  background-color: #eedab8;
+}
+
+.swiper img {
+  width: 500px;
+  height: 650px;
 }
