@@ -134,7 +134,18 @@ header .btn span {
 }
 
 /* cafe place */
+.cafe__place {
+  position: relative;
+  background-color: #eedab8;
+}
+
 .swiper {
+  margin-top: 100px;
+  border: 1px solid purple;
+  overflow: hidden;
+}
+
+.swiper img {
   width: 600px;
-  height: 300px;
+  height: auto;
 }
