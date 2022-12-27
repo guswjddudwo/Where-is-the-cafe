@@ -5,6 +5,7 @@ new Swiper(".cafe__place .swiper", {
   loop: true, // 반복 재생 여부
   autoplay: {
     // 자동 재생 여부
+
     delay: 6000, // 5초마다 슬라이드 바뀜
   },
   slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
