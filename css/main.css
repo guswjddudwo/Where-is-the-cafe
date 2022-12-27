@@ -70,16 +70,17 @@ header nav > ul > li:hover .sub-menu {
   position: absolute;
   top: 230%;
   z-index: 1;
-  /* display: none; */
+  display: none;
 }
 .sub__inner {
-  width: 100%;
+  width: 500px;
   position: absolute;
   text-align: center;
 }
 
 .sub__inner > ul {
-  width: 100%;
+  width: 200px;
+  position: absolute;
   background-color: #eedab8;
   border-radius: 0 0 4px 4px;
   z-index: 1;
@@ -87,11 +88,14 @@ header nav > ul > li:hover .sub-menu {
   /* display: flex; */
 }
 
-.sub__inner > li > a {
-  padding: 50px 50px;
+.sub__inner ul > li {
+  margin: 5px 5px;
+}
+
+.sub__inner ul > li > a {
   color: #3f3f3f;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 540;
 }
 .sub__inner > ul > li:hover {
   color: #dbac5b;
