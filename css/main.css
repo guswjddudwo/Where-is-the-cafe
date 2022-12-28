@@ -3,12 +3,12 @@ body {
   font-size: 16px;
   font-weight: 100;
   line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 a {
   /* 밑줄 제거 */
   text-decoration: none;
-  font-family: "Nanum Gothic", sans-serif;
 }
 
 header .inner {
@@ -172,6 +172,20 @@ header .btn span {
   width: 50%;
   margin-top: 100px;
   /* left: -100px; */
+}
+.text {
+  width: 210px;
+  height: 100px;
+  margin-top: -50px;
+  background-color: #dbac5b;
+  z-index: 1;
+}
+.swiper-slide p {
+  /* position: absolute; */
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3f3f3f;
 }
 
 .cafe__contents img {
