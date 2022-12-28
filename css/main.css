@@ -134,12 +134,12 @@ header .btn span {
 /* cafe place */
 
 .cafe__contents {
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
   background-color: #eedab8;
 }
 .cafe__contents > .inner {
-  width:600px;
+  /* width:500px; */
   margin-left: 100px;  
 }
 .title {
@@ -164,7 +164,7 @@ header .btn span {
   cursor: pointer;
 }
 .swiper {
-  width: 600px;
+  width: 500px;
   height: 300px;
 }
 .swiper-wrapper {
