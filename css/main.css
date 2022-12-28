@@ -139,13 +139,18 @@ header .btn span {
   background-color: #eedab8;
 }
 .cafe__contents > .inner {
-  /* width:500px; */
-  margin-left: 100px;  
+  width: 1723px;
+  margin: 0 auto;  
+  /* position: absolute; */
+  display: flex;
 }
 .title {
-  width: 300px;
-  height: 30px;
+  width: 210px;
+  height: 50px;
+  margin: 30px 0;
   display: flex;
+  background-color: rgb(247, 230, 184);
+  border-radius: 10px;
 }
 .title > h4 {
   font-size: 30px;
@@ -158,21 +163,24 @@ header .btn span {
   cursor: pointer;
 }
 .material-symbols-rounded {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 20px;
-  color: rgb(211, 137, 0);
+  color: rgb(204, 133, 2);
   cursor: pointer;
 }
 .swiper {
-  width: 500px;
-  height: 300px;
+  width: 50%;
+  margin-top: 100px;
+  /* left: -100px; */
 }
-.swiper-wrapper {
-  margin-top: 50px;
-}
+
 .cafe__contents img {
   width: 600px;
   height: 600px;
+}
+.box {
+  width: 50%;
+  margin-top: 100px;
 }
 
 
