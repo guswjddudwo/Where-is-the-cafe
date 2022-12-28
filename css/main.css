@@ -142,11 +142,26 @@ header .btn span {
   width:600px;
   margin-left: 100px;  
 }
-
-.cafe__contents h4 {
+.title {
+  width: 300px;
+  height: 30px;
+  display: flex;
+}
+.title > h4 {
   font-size: 30px;
   font-weight: 500;
   color: #3f3f3f;
+}
+.title > p {
+  margin-top: 20px;
+  color: #3f3f3f;
+  cursor: pointer;
+}
+.material-symbols-rounded {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(211, 137, 0);
+  cursor: pointer;
 }
 .swiper {
   width: 600px;

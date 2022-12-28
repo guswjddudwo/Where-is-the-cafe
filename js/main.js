@@ -1,5 +1,5 @@
 // 카페 소개 섹션 수평 슬라이드 기능
-new Swiper(".cafe__contents .swiper", {
+new Swiper(".cafe__contents .swipere", {
   // Optional parameters
   direction: "horizontal", // 수평 슬라이드(기본값)
   loop: true, // 반복 재생 여부
