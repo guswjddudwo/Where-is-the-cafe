@@ -132,20 +132,33 @@ header .btn span {
 }
 
 /* cafe place */
+
 .cafe__contents {
+  /* overflow: hidden; */
+  position: relative;
   background-color: #eedab8;
 }
-
-.cafe__contents img {
-  width: 400px;
-  height: auto;
+.cafe__contents > .inner {
+  width:600px;
+  margin-left: 100px;  
 }
 
+.cafe__contents h4 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #3f3f3f;
+}
 .swiper {
-  margin-top: 100px;
-  border: 1px solid purple;
-  overflow: hidden;
+  width: 600px;
+  height: 300px;
 }
-.swiper__reviw {
-  display: flex;
+.swiper-wrapper {
+  margin-top: 50px;
 }
+.cafe__contents img {
+  width: 600px;
+  height: 600px;
+}
+
+
+
