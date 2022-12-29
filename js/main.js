@@ -6,8 +6,9 @@ new Swiper(".cafe__contents .swiper", {
   autoplay: {
     // 자동 재생 여부
 
-    delay: 5000, // 5초마다 슬라이드 바뀜
+    delay: 3000, // 5초마다 슬라이드 바뀜
   },
+  grabCursor : "boolean" ,
   slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
   spaceBetween: 1, // 슬라이드 사이 여백(간격) px
   //centeredSlides: true, // 1번 슬라이드가 가운데 보이기

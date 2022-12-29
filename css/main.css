@@ -141,27 +141,26 @@ header .btn span {
 .cafe__contents > .inner {
   width: 1723px;
   margin: 0 auto;  
-  /* position: absolute; */
   display: flex;
 }
 .title {
-  width: 210px;
+  width: 200px;
   height: 50px;
-  margin: 30px 0;
+  position: absolute;
+  margin: 50px auto;
   display: flex;
-  background-color: rgb(247, 230, 184);
-  border-radius: 10px;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #3f3f3f;
+
 }
 .title > h4 {
-  font-size: 30px;
-  font-weight: 500;
-  color: #3f3f3f;
-}
-.title > p {
-  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
   color: #3f3f3f;
   cursor: pointer;
 }
+
 .material-symbols-rounded {
   margin-top: 10px;
   font-size: 20px;
@@ -170,24 +169,27 @@ header .btn span {
 }
 .swiper {
   width: 50%;
-  margin-top: 100px;
-  /* left: -100px; */
+  margin-top: 130px;
 }
-.text {
-  width: 210px;
-  height: 100px;
-  margin-top: -50px;
-  background-color: #dbac5b;
-  z-index: 1;
+.swiper-slide:hover img{
+  opacity: .5;
 }
 .swiper-slide p {
-  /* position: absolute; */
+  position: absolute;
   margin: 0 auto;
+  top: 35%;
+  left: 25%;
+  text-align: center;
   font-size: 18px;
   font-weight: 600;
   color: #3f3f3f;
+  display: none;
 }
-
+.swiper-slide-active:hover p {
+  display: block !important;
+  background-color: #f0dab7;
+  border-radius: 10px;
+}
 .cafe__contents img {
   width: 600px;
   height: 600px;
@@ -195,7 +197,61 @@ header .btn span {
 .box {
   width: 50%;
   margin-top: 100px;
+  right: 0;
 }
 
+/* diary */
+.diary {
+  background-color: #eedab8;
+}
+.diary > .inner {
+  width: 1723px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.content {
+  width: 50%;
+  margin-top: 10%;
+}
+.content > img {
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+}
 
-
+.text__box {
+  position: absolute;
+  margin: 0 auto;
+  left: 55%;
+}
+.text__content > h4 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #dbac5b;  
+  border-bottom: 1px solid #3f3f3f;
+}
+.text__content p {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #3f3f3f;
+}
+.btn__group {
+  position: absolute;
+}
+.btn__group > input {
+  height: 25px;
+  background-color: #faf8eb;
+  border: 1px solid #faf8eb;
+  color: #3f3f3f;
+  border-radius: 10px; 
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn__group > input:first-child {
+  margin-right: 30px;
+}
+.btn__group {
+  margin-top: 25px;
+}
