@@ -19,11 +19,10 @@
   <!-- 슬라이드 라이브러리 Swiper.js 연결 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- ScrollToPlugin 연결 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"
-    integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/main.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js" defer></script>
   <title>Where is cafe?</title>
 </head>
 
@@ -166,17 +165,55 @@
         </div>
       </div>
 
-      <div class="box">
-        <h4>REVIEW</h4>
-        <ul>
-          <li>
-            <a href="#"><img src="./images/review_1.jpg" alt="test"></a>
-          </li>
-        </ul>
+      <div class="title">
+        <h4>REVIEW</h4>      
+        <span class="material-symbols-rounded">add</span>
+      </div>
+      <div class="swiper">
+        <input type="button" value="다이어리 쓰러가기"> 
+        <input type="button" value="친구들에게 공유">                   
+        </div>
       </div>
     </div>
   </section>
 
+
+  <!-- <section class="new">
+    <div class="title">
+      <h4>New Cafe</h4>      
+      <span class="material-symbols-rounded">add</span>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <img src="/images/review_1.jpg" alt="카페" />            
+            <p>영업정보 <br>상호명:stable.d<br> 운영시간: 09시~19시<br>주소: 인천시 연수구 송도동<br>주차: 가능</p>                       
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/review_2.jpg" alt="카페" />
+          <p>영업정보 <br>상호명:휴양<br>운영시간: 11시~20시<br>주소: 인천시 남동구 구월동<br>주차: 공간 좁음</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/review_3.jpg" alt="카페" />
+          <p>영업정보 <br>상호명:quex<br>운영시간: 11시~01시<br>주소: 인천시 남동구 구월동<br>주차: 불가</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/review_4.jpg" alt="카페" />
+          <p>영업정보 <br>상호명:quex<br>운영시간: 11시~01시<br>주소: 인천시 남동구 구월동<br>주차: 불가</p>
+        </div>           
+        <div class="swiper-slide">
+          <img src="/images/review_5.jpg" alt="카페" />
+          <p>영업정보 <br>상호명:quex<br>운영시간: 11시~01시<br>주소: 인천시 남동구 구월동<br>주차: 불가</p>
+        </div> 
+        <div class="swiper-slide">
+          <img src="/images/review_6.jpg" alt="카페" />
+          <p>영업정보 <br>상호명:quex<br>운영시간: 11시~01시<br>주소: 인천시 남동구 구월동<br>주차: 불가</p>
+        </div> 
+      </div>
+    </div>
+  </section> -->
+  <!-- 다이어리 -->
   <section class="diary">
     <div class="inner">
       <div class="content">
@@ -206,31 +243,27 @@
     <div class="inner">
       <ul class="menu">
         <li><a href="javascript:void(0)" class="orange">개인정보처리방침</a></li>
-        <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
         <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
         <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-        <li><a href="javascript:void(0)">카드 이용약관</a></li>
         <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
       </ul>
       <div class="btn-group">
         <a href="javascript:void(0)" class="btn btn--wite">찾아오시는 길</a>
-        <a href="javascript:void(0)" class="btn btn--wite">신규입점제의</a>
+        <a href="javascript:void(0)" class="btn btn--wite">광고문의</a>
         <a href="javascript:void(0)" class="btn btn--wite">사이트 맵</a>
       </div>
       <div class="info">
         <span>사업자등록번호 123-45-678901</span>
-        <span>(주)별다방 코리아</span>
+        <span>(주)카페 어디가</span>
         <span>TEL : 02) 1234-5678 / FAX : 02) 1234-5678</span>
-        <span>개인정보 책임자 : 김재현</span>
+        <span>개인정보 책임자 : 김현정</span>
       </div>
       <p class="copyright">
         <!-- HTML 특수문자 -->
         <!-- &lt;(<)&gt;(>) &nbsp; ( ) &copy; -->
         &copy; <span class="this-year"></span>
-        star Coffee company .All Rights Reaerved.
-  
-      </p>
-      <img src="./images/logo_text.png" alt="" class="logo">
+        star Coffee company .All Rights Reaerved.  
+      </p>      
     </div>
   </footer>
   
@@ -238,9 +271,9 @@
   
   <!-- SCROLL TO TOP -->
   <div id="to-top">
-    
+    <!-- <a href="#"> -->
       <span class="material-icons">arrow_upward</span>
-  
+    <!-- </a> -->
   </div>
 </body>
 
