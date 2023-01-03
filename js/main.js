@@ -9,3 +9,5 @@ new Swiper('.cafe__contents .swiper', {
   },
   slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수  
 });
+
+// 슬라이드 간격 추가하기

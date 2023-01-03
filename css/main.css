@@ -200,6 +200,11 @@ header .btn span {
   right: 0;
 }
 
+/* 검색순위 */
+.ranking {
+  width: 50%;
+}
+
 /* NEW */
 .new {
   background-color: #eedab8;
