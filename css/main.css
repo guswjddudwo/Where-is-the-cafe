@@ -134,13 +134,14 @@ header .btn span {
 /* cafe place */
 
 .cafe__contents {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   background-color: #eedab8;
 }
 .cafe__contents > .inner {
   width: 1723px;
-  margin: 0 auto;  
+  height: 800px;
+  margin: 0 auto;
   display: flex;
 }
 .title {
@@ -152,7 +153,6 @@ header .btn span {
   justify-content: start;
   align-items: center;
   border-bottom: 1px solid #3f3f3f;
-
 }
 .title > h4 {
   font-size: 25px;
@@ -168,11 +168,12 @@ header .btn span {
   cursor: pointer;
 }
 .swiper {
-  width: 50%;
-  margin-top: 130px;
+  width: 700px;
+  height: 700px;
+  margin: 130px auto;
 }
-.swiper-slide:hover img{
-  opacity: .5;
+.swiper-slide:hover img {
+  opacity: 0.5;
 }
 .swiper-slide p {
   position: absolute;
@@ -209,6 +210,10 @@ header .btn span {
 .new {
   background-color: #eedab8;
 }
+.new img {
+  width: 600px;
+  height: 600px;
+}
 
 /* diary */
 .diary {
@@ -239,7 +244,7 @@ header .btn span {
 .text__content > h4 {
   font-size: 50px;
   font-weight: 600;
-  color: #dbac5b;  
+  color: #dbac5b;
   border-bottom: 1px solid #3f3f3f;
 }
 .text__content p {
@@ -255,7 +260,7 @@ header .btn span {
   background-color: #faf8eb;
   border: 1px solid #faf8eb;
   color: #3f3f3f;
-  border-radius: 10px; 
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
 }
