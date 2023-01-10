@@ -139,8 +139,9 @@ header .btn span {
   background-color: #eedab8;
 }
 .cafe__contents > .inner {
-  width: 1723px;
-  height: 800px;
+  position: relative;
+  width: 1720px;
+  /* height: 800px; */
   margin: 0 auto;
   display: flex;
 }
@@ -167,9 +168,12 @@ header .btn span {
   cursor: pointer;
 }
 .swiper {
-  width: 700px;
-  height: 700px;
+  /* width: 1120px; */
+  /* height: 700px; */
   margin: 130px auto;
+}
+.swiper-wrapper {
+  width: 500px;
 }
 .swiper-slide:hover img {
   opacity: 0.5;
@@ -191,8 +195,8 @@ header .btn span {
   border-radius: 10px;
 }
 .cafe__contents img {
-  width: 600px;
-  height: 600px;
+  width: 1000px;
+  /* height: 800px; */
 }
 .box {
   width: 50%;
@@ -201,14 +205,11 @@ header .btn span {
 }
 
 /* 검색순위 */
-.ranking {
-  width: 50%;
-}
+
 .ranking > .title {
-  width: 190px;
-  height: 50px;
+  width: auto;
   position: absolute;
-  margin: 50px 200px;
+  margin-top: 50px;
   align-items: center;
   border-bottom: 1px solid #3f3f3f;
 }
