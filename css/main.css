@@ -168,12 +168,17 @@ header .btn span {
   cursor: pointer;
 }
 .swiper {
-  /* width: 1120px; */
+  width: 80%;
   /* height: 700px; */
   margin: 130px auto;
 }
-.swiper-wrapper {
-  width: 500px;
+/* .swiper-wrapper {
+  width: 10%;
+} */
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
 }
 .swiper-slide:hover img {
   opacity: 0.5;
@@ -195,7 +200,7 @@ header .btn span {
   border-radius: 10px;
 }
 .cafe__contents img {
-  width: 1000px;
+  width: 100px;
   /* height: 800px; */
 }
 .box {
