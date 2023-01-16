@@ -61,7 +61,11 @@ header nav > ul > li > a {
 }
 
 /* 드롭다운 */
-header nav > ul > li:hover .sub-menu {
+/* header nav > ul > li:hover .sub-menu {
+  display: block;
+} */
+
+.main--menu > ul li:hover .sub__inner > ul {
   display: block;
 }
 
@@ -70,11 +74,12 @@ header nav > ul > li:hover .sub-menu {
   position: absolute;
   top: 45px;
   z-index: 1;
-  display: none;
+  /* display: none; */
 }
 .sub__inner {
   width: 500px;
   position: absolute;
+  /* display: none; */
 }
 
 .sub__inner > ul {
@@ -83,6 +88,7 @@ header nav > ul > li:hover .sub-menu {
   border-radius: 0 0 4px 4px;
   z-index: 1;
   margin: 0 10px;
+  display: none;
 }
 
 .sub__inner ul > li {
@@ -199,7 +205,7 @@ header .btn span {
   border-radius: 10px;
 }
 .cafe__contents img {
-  width: 500px;
+  width: 700px;
   height: 800px;
 }
 .box {

@@ -6,10 +6,9 @@ new Swiper(".cafe__contents .swiper", {
     // 자동 재생 여부
     delay: 1000, // 5초마다 슬라이드 바뀜
     pauseOnMouseEnter: true,
-    spaceBetween: 200,
+    spaceBetween: 1,
   },
-  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수  
+  slidesPerView: 2, // 한 번에 보여줄 슬라이드 개수
 });
 
 // 슬라이드 간격 추가하기
-
