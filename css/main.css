@@ -134,13 +134,12 @@ header .btn span {
 /* cafe place */
 
 .cafe__contents {
-  /* overflow: hidden; */
   position: relative;
   background-color: #eedab8;
 }
 .cafe__contents > .inner {
   position: relative;
-  width: 1720px;
+  width: 1700px;
   /* height: 800px; */
   margin: 0 auto;
   display: flex;
@@ -168,17 +167,17 @@ header .btn span {
   cursor: pointer;
 }
 .swiper {
-  width: 80%;
+  /* width: 50%; */
   /* height: 700px; */
   margin: 130px auto;
 }
-/* .swiper-wrapper {
-  width: 10%;
-} */
+.swiper-wrapper {
+  width: 80%;
+}
 
 .swiper-slide {
-  width: 100%;
-  display: flex;
+  /* width: 100%; */
+  overflow: hidden;
 }
 .swiper-slide:hover img {
   opacity: 0.5;
@@ -200,8 +199,8 @@ header .btn span {
   border-radius: 10px;
 }
 .cafe__contents img {
-  width: 100px;
-  /* height: 800px; */
+  width: 500px;
+  height: 800px;
 }
 .box {
   width: 50%;
@@ -210,7 +209,10 @@ header .btn span {
 }
 
 /* 검색순위 */
-
+.ranking {
+  width: 20%;
+  z-index: 1;
+}
 .ranking > .title {
   width: auto;
   position: absolute;
