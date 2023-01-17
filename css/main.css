@@ -145,7 +145,7 @@ header .btn span {
 }
 .cafe__contents > .inner {
   position: relative;
-  width: 1700px;
+  width: 1720px;
   /* height: 800px; */
   margin: 0 auto;
   display: flex;
@@ -172,23 +172,22 @@ header .btn span {
   color: rgb(204, 133, 2);
   cursor: pointer;
 }
-.cafe__swiper {
-  /* width: 50%; */
-  /* height: 700px; */
-  margin: 130px auto;
+.cafe__contents .swiper {
+  width: 1000px;
+  /* margin: 130px auto; */
 }
-.cafe__swiper-wrapper {
-  width: 80%;
+.cafe__contents .swiper-wrapper {
+  width: 100%;
 }
 
-.cafe__swiper-slide {
-  /* width: 100%; */
+.cafe__contents .swiper-slide {
+  width: 100%;
   overflow: hidden;
 }
-.cafe__swiper-slide:hover img {
+.cafe__contents .swiper-slide:hover img {
   opacity: 0.5;
 }
-.cafe__swiper-slide p {
+.cafe__contents .swiper-slide p {
   position: absolute;
   margin: 0 auto;
   top: 35%;
@@ -199,7 +198,7 @@ header .btn span {
   color: #3f3f3f;
   display: none;
 }
-.cafe__swiper-slide-active:hover p {
+.cafe__contents .swiper-slide-active:hover p {
   display: block !important;
   background-color: #f0dab7;
   border-radius: 10px;
@@ -207,6 +206,27 @@ header .btn span {
 .cafe__contents img {
   width: 700px;
   height: 800px;
+}
+
+.cafe__contents .swiper-button-prev {
+  /* 가운데로 몰아넣고 마진으로 위치 조정 */
+  top: 50%;
+}
+.cafe__contents .swiper-button-next {
+  top: 50%;
+}
+.cafe__contents .swiper-button-prev > span,
+.cafe__contents .swiper-button-next > span {
+  font-size: 100px;
+}
+.cafe__contents .swiper-button-prev:hover,
+.cafe__contents .swiper-button-next:hover {
+  /* background-color: #333; */
+  color: #fff;
+}
+.cafe__contents .swiper-button-prev::after,
+.cafe__contents .swiper-button-next::after {
+  display: none;
 }
 .box {
   width: 50%;
