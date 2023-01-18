@@ -173,7 +173,7 @@ header .btn span {
   cursor: pointer;
 }
 .cafe__contents .swiper {
-  width: 1000px;
+  width: 50%;
   /* margin: 130px auto; */
 }
 .cafe__contents .swiper-wrapper {
@@ -189,7 +189,7 @@ header .btn span {
 }
 .cafe__contents .swiper-slide p {
   position: absolute;
-  margin: 0 auto;
+  margin: auto;
   top: 35%;
   left: 25%;
   text-align: center;
@@ -204,8 +204,8 @@ header .btn span {
   border-radius: 10px;
 }
 .cafe__contents img {
-  width: 700px;
-  height: 800px;
+  width: 100%;
+  height: 750px;
 }
 
 .cafe__contents .swiper-button-prev {
@@ -219,11 +219,7 @@ header .btn span {
 .cafe__contents .swiper-button-next > span {
   font-size: 100px;
 }
-.cafe__contents .swiper-button-prev:hover,
-.cafe__contents .swiper-button-next:hover {
-  /* background-color: #333; */
-  color: #fff;
-}
+
 .cafe__contents .swiper-button-prev::after,
 .cafe__contents .swiper-button-next::after {
   display: none;

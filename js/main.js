@@ -8,11 +8,11 @@ new Swiper(".cafe__contents .swiper", {
     pauseOnMouseEnter: true,
     spaceBetween: 300,
   },
-  slidesPerView: 2, // 한 번에 보여줄 슬라이드 개수
+  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
   navigation: {
     // 이전/다음 슬라이드 버튼 사용
-    nextEl: ".promotion .swiper-button-next",
-    prevEl: ".promotion .swiper-button-prev",
+    nextEl: ".cafe__contents .swiper-button-next > span",
+    prevEl: ".cafe__contents .swiper-button-prev > span",
   },
 });
 
