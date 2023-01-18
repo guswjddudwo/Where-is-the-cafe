@@ -173,15 +173,15 @@ header .btn span {
   cursor: pointer;
 }
 .cafe__contents .swiper {
-  width: 50%;
+  /* width: 50%; */
   /* margin: 130px auto; */
 }
 .cafe__contents .swiper-wrapper {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .cafe__contents .swiper-slide {
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
 }
 .cafe__contents .swiper-slide:hover img {

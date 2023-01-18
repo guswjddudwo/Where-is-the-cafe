@@ -4,11 +4,11 @@ new Swiper(".cafe__contents .swiper", {
   loop: true, // 반복 재생 여부
   autoplay: {
     // 자동 재생 여부
-    delay: 5000, // 초마다 슬라이드 바뀜
+    delay: 50000, // 초마다 슬라이드 바뀜
     pauseOnMouseEnter: true,
-    spaceBetween: 300,
+    spaceBetween: 100,
   },
-  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+  slidesPerView: 2, // 한 번에 보여줄 슬라이드 개수
   navigation: {
     // 이전/다음 슬라이드 버튼 사용
     nextEl: ".cafe__contents .swiper-button-next > span",
