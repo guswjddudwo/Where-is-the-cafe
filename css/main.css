@@ -173,42 +173,39 @@ header .btn span {
   cursor: pointer;
 }
 .cafe__contents .swiper {
-  width: 800px;
-  margin: 130px;
+  /* width: 800px; */
+  margin: 130px auto;
   overflow: hidden;
 }
-
+.swiper-slide {
+  display: flex;
+}
 .cafe__contents .swiper-slide:hover img {
   opacity: 0.5;
 }
-.cafe__contents .swiper-slide p {
-  position: absolute;
-  margin: auto;
-  top: 35%;
-  left: 25%;
+.swiper-slide p {
+  width: 250px;
+  /* height: 200px; */
+  /* position: absolute; */
+  margin: 0 auto;
+  right: 0;
+  bottom: -10px;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
   color: #3f3f3f;
-  display: none;
+  background-color: aqua;
 }
-.cafe__contents .swiper-slide-active:hover p {
+/* .cafe__contents .swiper-slide-active:hover p {
   display: block !important;
   background-color: #f0dab7;
   border-radius: 10px;
-}
+} */
 .cafe__contents img {
-  width: 100%;
+  width: 50%;
   height: 750px;
 }
 
-.cafe__contents .swiper-button-prev {
-  /* 가운데로 몰아넣고 마진으로 위치 조정 */
-  left: 9%;
-}
-.cafe__contents .swiper-button-next {
-  left: 51%;
-}
 .cafe__contents .swiper-button-prev > span,
 .cafe__contents .swiper-button-next > span {
   color: #ddddddbd;
@@ -224,7 +221,13 @@ header .btn span {
   margin-top: 100px;
   right: 0;
 }
-
+/* 지도 */
+#map {
+  width: 50%;
+  height: 500px;
+  background-color: #fff;
+  margin-left: 100px;
+}
 /* 검색순위 */
 /* .ranking {
   width: 20%;
