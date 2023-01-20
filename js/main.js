@@ -4,11 +4,11 @@ new Swiper(".cafe__contents .swiper", {
   loop: true, // 반복 재생 여부
   autoplay: {
     // 자동 재생 여부
-    delay: 50000, // 초마다 슬라이드 바뀜
+    delay: 3000, // 초마다 슬라이드 바뀜
     pauseOnMouseEnter: true,
-    spaceBetween: 100,
+    // spaceBetween: 100,
   },
-  slidesPerView: 2, // 한 번에 보여줄 슬라이드 개수
+  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
   navigation: {
     // 이전/다음 슬라이드 버튼 사용
     nextEl: ".cafe__contents .swiper-button-next > span",
@@ -68,3 +68,14 @@ window.addEventListener("scroll", function () {
     });
   }
 });
+
+// 지도!!!!!!!!!!11
+
+var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+  mapOption = {
+    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+    level: 3, // 지도의 확대 레벨
+  };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption);

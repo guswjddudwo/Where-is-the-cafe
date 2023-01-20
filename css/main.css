@@ -173,17 +173,11 @@ header .btn span {
   cursor: pointer;
 }
 .cafe__contents .swiper {
-  /* width: 50%; */
-  /* margin: 130px auto; */
-}
-.cafe__contents .swiper-wrapper {
-  /* width: 100%; */
-}
-
-.cafe__contents .swiper-slide {
-  /* width: 100%; */
+  width: 800px;
+  margin: 130px;
   overflow: hidden;
 }
+
 .cafe__contents .swiper-slide:hover img {
   opacity: 0.5;
 }
@@ -210,13 +204,14 @@ header .btn span {
 
 .cafe__contents .swiper-button-prev {
   /* 가운데로 몰아넣고 마진으로 위치 조정 */
-  top: 50%;
+  left: 9%;
 }
 .cafe__contents .swiper-button-next {
-  top: 50%;
+  left: 51%;
 }
 .cafe__contents .swiper-button-prev > span,
 .cafe__contents .swiper-button-next > span {
+  color: #ddddddbd;
   font-size: 100px;
 }
 
