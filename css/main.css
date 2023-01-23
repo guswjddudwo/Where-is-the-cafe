@@ -180,9 +180,9 @@ header .btn span {
 .swiper-slide {
   display: flex;
 }
-.cafe__contents .swiper-slide:hover img {
+/* .cafe__contents .swiper-slide:hover img {
   opacity: 0.5;
-}
+} */
 .swiper-slide p {
   width: 250px;
   /* height: 200px; */
