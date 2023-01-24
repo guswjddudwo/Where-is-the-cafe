@@ -185,7 +185,7 @@ header .btn span {
 } */
 .swiper-slide p {
   width: 250px;
-  /* height: 200px; */
+  height: 200px;
   /* position: absolute; */
   margin: 0 auto;
   right: 0;
