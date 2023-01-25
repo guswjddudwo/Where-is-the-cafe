@@ -196,11 +196,7 @@ header .btn span {
   color: #3f3f3f;
   background-color: aqua;
 }
-/* .cafe__contents .swiper-slide-active:hover p {
-  display: block !important;
-  background-color: #f0dab7;
-  border-radius: 10px;
-} */
+
 .cafe__contents img {
   width: 50%;
   height: 750px;
@@ -228,35 +224,6 @@ header .btn span {
   background-color: #fff;
   margin-left: 100px;
 }
-/* 검색순위 */
-/* .ranking {
-  width: 20%;
-  z-index: 1;
-}
-.ranking > .title {
-  width: auto;
-  position: absolute;
-  margin-top: 50px;
-  align-items: center;
-  border-bottom: 1px solid #3f3f3f;
-}
-.ranking-list {
-  width: 500px;
-  position: absolute;
-  margin: 0 auto;
-  top: 180px;
-  right: 300px;
-  background-color: #faf8eb;
-}
-.ranking-list li {
-  line-height: 5;
-  text-align: center;
-}
-.ranking-list a {
-  font-size: 24px;
-  font-weight: 500;
-  color: #3f3f3f;
-} */
 
 /* NEW */
 .new {
@@ -299,11 +266,9 @@ header .btn span {
   /* width: 100%; */
   overflow: hidden;
 }
-.swiper-slide:hover img {
-  opacity: 0.5;
-}
+
 .swiper-slide p {
-  position: absolute;
+  /* position: absolute; */
   margin: 0 auto;
   top: 35%;
   left: 25%;
@@ -311,13 +276,8 @@ header .btn span {
   font-size: 18px;
   font-weight: 600;
   color: #3f3f3f;
-  display: none;
 }
-.swiper-slide-active:hover p {
-  display: block !important;
-  background-color: #f0dab7;
-  border-radius: 10px;
-}
+
 .new img {
   width: 600px;
   height: 600px;
