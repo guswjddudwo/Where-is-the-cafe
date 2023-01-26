@@ -28,7 +28,7 @@ img {
 }
 
 header {
-  background-color: #eedab8;
+  background-color: #ffffffa6;
   width: 100%;
   position: fixed;
   top: 0;
@@ -36,9 +36,12 @@ header {
 }
 
 header h1 {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 900;
   color: #dbac5b;
+}
+header > .inner > a {
+  text-decoration: none;
 }
 /* 메인 메뉴 */
 
@@ -47,16 +50,17 @@ header .main--menu > ul {
 }
 
 header nav > ul > li {
-  margin: 0 30px;
+  margin: 5px 30px 0 0;
   position: relative;
 }
 header nav > ul > li > a:hover {
   color: #dbac5b;
+  text-decoration: none;
 }
 header nav > ul > li > a {
   color: #3f3f3f;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 550;
   padding: 8px 24px;
 }
 
@@ -187,14 +191,13 @@ header .btn span {
   bottom: 0;
   /* text-align: center; */
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   color: #3f3f3f;
-
 }
 
 .cafe__contents img {
-  width: 50%;
-  height: 750px;
+  width: 700px;
+  height: 650px;
 }
 
 .cafe__contents .swiper-button-prev > span,
@@ -215,7 +218,7 @@ header .btn span {
 /* 지도 */
 #map {
   width: 50%;
-  height: 500px;
+  height: 400px;
   background-color: #fff;
   margin-left: 100px;
 }
