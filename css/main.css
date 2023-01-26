@@ -173,28 +173,23 @@ header .btn span {
   cursor: pointer;
 }
 .cafe__contents .swiper {
-  /* width: 800px; */
   margin: 130px auto;
   overflow: hidden;
 }
 .swiper-slide {
   display: flex;
 }
-/* .cafe__contents .swiper-slide:hover img {
-  opacity: 0.5;
-} */
+
 .swiper-slide p {
-  width: 250px;
-  height: 200px;
-  /* position: absolute; */
+  position: absolute;
   margin: 0 auto;
-  right: 0;
-  bottom: -10px;
-  text-align: center;
-  font-size: 18px;
+  right: 15%;
+  bottom: 0;
+  /* text-align: center; */
+  font-size: 30px;
   font-weight: 600;
   color: #3f3f3f;
-  background-color: aqua;
+
 }
 
 .cafe__contents img {
@@ -253,25 +248,17 @@ header .btn span {
   cursor: pointer;
 }
 
-.swiper {
+.new .swiper {
   /* width: 50%; */
   /* height: 700px; */
   margin: 130px auto;
 }
-.swiper-wrapper {
-  width: 80%;
-}
 
-.swiper-slide {
-  /* width: 100%; */
-  overflow: hidden;
-}
-
-.swiper-slide p {
-  /* position: absolute; */
+.new .swiper-slide p {
+  position: absolute;
   margin: 0 auto;
-  top: 35%;
-  left: 25%;
+  top: 70%;
+  left: 50%;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
