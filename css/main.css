@@ -194,6 +194,9 @@ header .btn span {
   font-weight: 500;
   color: #3f3f3f;
 }
+.cafe__contents .swiper-slide #map > p ~ p {
+  color: red;
+}
 
 .cafe__contents img {
   width: 700px;
