@@ -187,23 +187,26 @@ header .btn span {
 .swiper-slide h4 {
   position: absolute;
   margin: 0 50px;
-  left: 50%;
-  bottom: 10%;
-  /* text-align: center; */
-  font-size: 30px;
-  font-weight: 500;
+  right: 28%;
+  bottom: 16%;
+  font-size: 25px;
   color: #3f3f3f;
 }
 .swiper-slide p {
   position: absolute;
-  right: 8%;
-  bottom: 12%;
-  font-size: 30px;
-  color: red;
+  right: 10%;
+  bottom: 13%;
+  font-size: 25px;
+  color: #3f3f3f;
 }
 
 .swiper-slide .material-symbols-rounded {
-  color: #3f3f3f;
+  position: absolute;
+  bottom: 15%;
+  right: 19%;
+  font-size: 30px;
+  color: #6595cc;
+  cursor: pointer;
 }
 
 .cafe__contents img {
