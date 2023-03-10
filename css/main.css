@@ -36,9 +36,10 @@ header .inner {
 
 header h1 {
   font-size: 40px;
-  /* font-weight: 900; */
   color: #dbac5b;
 }
+
+
 header > .inner > a {
   text-decoration: none;
 }
@@ -70,7 +71,7 @@ header nav > ul > li > a {
 }
 
 .sub-menu {
-  width: 200px;
+  width: 230px;
   position: absolute;
   top: 30px;
   z-index: 1;
@@ -82,29 +83,25 @@ header nav > ul > li > a {
 
 .sub__inner > ul {
   position: absolute;
+  width: 88px;
   left: 20px;
-  background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   z-index: 1;
   margin: 0 auto;
-  /* display: none; */
+  display: none;
+  background-color: #ffffff69;
 }
 
-.sub__inner ul > li {
-  text-align: center;
-}
 
 .sub__inner ul > li > a {
   color: #3f3f3f;
   font-size: 14px;
-  /* font-weight: 540; */
 }
 .sub__inner > ul > li:hover {
   color: #dbac5b;
   cursor: pointer;
 }
 .sub__inner h4 {
-  /* font-weight: 550; */
   color: brown;
 }
 
@@ -139,12 +136,10 @@ header .btn span {
 
 .cafe__contents {
   position: relative;
-  /* background-color: #eedab8; */
 }
 .cafe__contents > .inner {
   position: relative;
-  width: 1720px;
-  /* height: 800px; */
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
@@ -159,7 +154,6 @@ header .btn span {
 }
 .cafe__contents > .inner > .title > h4 {
   font-size: 25px;
-  font-weight: 600;
   color: #3f3f3f;
   cursor: pointer;
 }
@@ -227,19 +221,17 @@ header .btn span {
 #map {
   width: 50%;
   height: 400px;
-  background-color: #fff;
+  background-color: #ad9528;
   margin-left: 100px;
 }
 
 /* NEW */
 .new {
   position: relative;
-  /* background-color: #eedab8; */
 }
 .new > .inner {
   position: relative;
-  width: 1700px;
-  /* height: 800px; */
+  width: 1200px;
   margin: 0 auto;
   display: flex;
 }
@@ -254,14 +246,11 @@ header .btn span {
 }
 .new > .inner > .title > h4 {
   font-size: 25px;
-  /* font-weight: 600; */
   color: #3f3f3f;
   cursor: pointer;
 }
 
 .new .swiper {
-  /* width: 50%; */
-  /* height: 700px; */
   margin: 130px auto;
 }
 
@@ -272,7 +261,6 @@ header .btn span {
   left: 50%;
   text-align: center;
   font-size: 18px;
-  /* font-weight: 600; */
   color: #3f3f3f;
 }
 
@@ -282,9 +270,7 @@ header .btn span {
 }
 
 /* diary */
-/* .diary {
 
-} */
 .diary > .inner {
   width: 1200px;
   position: relative;
@@ -327,7 +313,6 @@ header .btn span {
   border: 1px solid #faf8eb;
   color: #3f3f3f;
   border-radius: 10px;
-  /* font-weight: 600; */
   cursor: pointer;
 }
 .btn__group > input:hover {
@@ -372,7 +357,6 @@ footer .menu li a {
   display: block;
   color: #3f3f3f;
   font-size: 12px;
-  /* font-weight: 700; */
   padding: 15px;
 }
 footer .menu li a.orange {
