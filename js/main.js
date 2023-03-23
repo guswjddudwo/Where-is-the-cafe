@@ -1,4 +1,29 @@
-// 카페 소개 섹션 수평 슬라이드 기능
+
+// meue 
+const headerEl = document.querySelector('header');
+    const mainMenuEl = document.querySelector('nav.gnb > .main-menu');
+    const subMenuEls = document.querySelectorAll('nav.gnb .sub-menu');
+
+    mainMenuEl.addEventListener('mouseover', function () {
+      headerEl.style.height = '100px';
+
+      subMenuEls.forEach(function (subMenuEl) {
+        subMenuEl.style.opacity = '1';
+        subMenuEl.style.visibility = 'visible';
+      });
+    });
+
+    headerEl.addEventListener('mouseleave', function () {
+      headerEl.style.height = '100px';
+
+      subMenuEls.forEach(function (subMenuEl) {
+        subMenuEl.style.opacity = '0';
+        subMenuEl.style.visibility = 'hidden';
+      });
+    });
+
+
+// main slied
 new Swiper(".cafe__contents .swiper", {
   direction: "horizontal", // 수평 슬라이드(기본값)
   loop: true, // 반복 재생 여부
@@ -54,28 +79,26 @@ window.addEventListener("scroll", function () {
       opacity: 1,
       x: 0, // x축 0px 지점으로 이동
     });
-  } else {
-    // badgeEl.style.display = 'block';
-
-    gsap.to(badgeEl, 0.6, {
-      opacity: 1,
-      display: "block",
-    });
-    // 상단으로 이동 버튼 숨기기!
-    gsap.to(toTopEl, 0.6, {
-      opacity: 0,
-      x: 100, // x축 100px 지점으로 이동
-    });
-  }
+  } 
 });
 
 // 지도!!!!!!!!!!11
 
-var mapContainer = document.getElementById("map"), // 지도를 표시할 div
-  mapOption = {
-    center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-    level: 3, // 지도의 확대 레벨
-  };
+// 이미지 지도에서 마커가 표시될 위치입니다 
+// var markerPosition  = new kakao.maps.LatLng(33.450701, 126.570667); 
 
-// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-var map = new kakao.maps.Map(mapContainer, mapOption);
+// // 이미지 지도에 표시할 마커입니다
+// // 이미지 지도에 표시할 마커는 Object 형태입니다
+// var marker = {
+//     position: markerPosition
+// };
+
+// var staticMapContainer  = document.getElementById('staticMap'), // 이미지 지도를 표시할 div  
+//     staticMapOption = { 
+//         center: new kakao.maps.LatLng(33.450701, 126.570667), // 이미지 지도의 중심좌표
+//         level: 3, // 이미지 지도의 확대 레벨
+//         marker: marker // 이미지 지도에 표시할 마커 
+//     };    
+
+// // 이미지 지도를 생성합니다
+// var staticMap = new kakao.maps.StaticMap(staticMapContainer, staticMapOption);
