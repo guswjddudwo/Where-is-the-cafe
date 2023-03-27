@@ -318,9 +318,7 @@ footer {
   background-color: #faf8eb;
   border-top: 1px solid rgb(238, 238, 238);
 }
-footer .inner {
-  padding: 40px 0 60px;
-}
+
 footer .menu {
   display: flex;
   justify-content: center;
@@ -400,3 +398,29 @@ footer .copyright {
 #to-top > p {
   font-size: 15px;
 }
+
+/* tablet & mobile */
+@media screen and (max-width:1279px){
+  /* RECRUIT */
+  .recruit .left .btn {
+    margin: 0px auto;
+  }
+  .recruit .left_right_inner {
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .recruit .left_right_inner {
+    margin-top: 60px;
+  }
+  .recruit .left_right_inner .left {
+    margin-bottom: 20px;
+  }
+  .recruit .left p {
+    font-size: 2.0rem;
+    text-align: center;
+    padding-left: 0px;
+  }
+  
+  .recruit .swiper .swiper-wrapper {
+    width: 50%;
+  }}
