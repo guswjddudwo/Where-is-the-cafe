@@ -397,7 +397,6 @@ footer .copyright {
   align-items: center;
 }
 
-#to-top > .material-symbols-rounded {
-  font-size: 50px;
-  text-align: center;
+#to-top > p {
+  font-size: 15px;
 }
