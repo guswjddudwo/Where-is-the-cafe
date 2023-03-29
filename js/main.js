@@ -5,7 +5,7 @@ const headerEl = document.querySelector('header');
     const subMenuEls = document.querySelectorAll('nav.gnb .sub-menu');
 
     mainMenuEl.addEventListener('mouseover', function () {
-      headerEl.style.height = '100px';
+      headerEl.style.height = '350px';
 
       subMenuEls.forEach(function (subMenuEl) {
         subMenuEl.style.opacity = '1';

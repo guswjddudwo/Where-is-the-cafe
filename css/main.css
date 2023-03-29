@@ -19,7 +19,6 @@ display: block;
 width: 1200px;
 margin: 0 auto;
 position: relative;
-/* display: flex; */
 }
 
 header {
@@ -77,7 +76,7 @@ position: absolute;
 width: 100%;
 height: 210px;
 top: 100px;
-z-index: 1;
+z-index: 999;
 opacity: 0;
 visibility: hidden;
 background-color: #ffffff;
@@ -107,23 +106,27 @@ line-height: 100px;
 
 /* main*/
 .main {
-position: relative;
+width: 100%;
 }
 .image__item {
-z-index: 2;
-height: 750px;
-background-image: url("/images/visual1.jpg");
+  /* position: fixed; */
+/* width: 100%; */
+/* height: 750px; */
+/* background-image: url("/images/visual1.jpg"); */
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 opacity: 0.8;
 }
 .image__item > img {
-position: absolute;
+  width: 100%;
+  height: 700px;
+  /* position: relative; */
+/* position: absolute;
 margin: 0 auto;
 top: 50%;
-left: 375px;
-right: 375px;
+left: 25%;
+right: 25%; */
 }
 
 /* cafe place */
@@ -153,7 +156,7 @@ color: rgb(204, 133, 2);
 cursor: pointer;
 }
 .cafe__contents .swiper {
-margin: 130px auto;
+margin: 0 auto;
 overflow: hidden;
 }
 .swiper-slide {
