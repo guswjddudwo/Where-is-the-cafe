@@ -45,7 +45,6 @@ line-height: 100px;
 
 /* 메인 메뉴 */
 header nav.gnb {
-/* width: 100%; */
 position: absolute;
 top: 0;
 right: 25%;
