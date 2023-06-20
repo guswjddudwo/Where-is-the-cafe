@@ -13,14 +13,14 @@ const headerEl = document.querySelector('header');
       });
     });
 
-    headerEl.addEventListener('mouseleave', function () {
-      headerEl.style.height = '100px';
+    // headerEl.addEventListener('mouseleave', function () {
+    //   headerEl.style.height = '100px';
 
-      subMenuEls.forEach(function (subMenuEl) {
-        subMenuEl.style.opacity = '0';
-        subMenuEl.style.visibility = 'hidden';
-      });
-    });
+    //   subMenuEls.forEach(function (subMenuEl) {
+    //     subMenuEl.style.opacity = '0';
+    //     subMenuEl.style.visibility = 'hidden';
+    //   });
+    // });
 
 
 // main slied
@@ -41,17 +41,17 @@ new Swiper(".cafe__contents .swiper", {
   },
 });
 
-new Swiper(".new .swiper", {
-  direction: "horizontal", // 수평 슬라이드(기본값)
-  loop: true, // 반복 재생 여부
-  autoplay: {
-    // 자동 재생 여부
-    delay: 5000, // 초마다 슬라이드 바뀜
-    pauseOnMouseEnter: true,
-    spaceBetween: 1,
-  },
-  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
-});
+// new Swiper(".new .swiper", {
+//   direction: "horizontal", // 수평 슬라이드(기본값)
+//   loop: true, // 반복 재생 여부
+//   autoplay: {
+//     // 자동 재생 여부
+//     delay: 5000, // 초마다 슬라이드 바뀜
+//     pauseOnMouseEnter: true,
+//     spaceBetween: 1,
+//   },
+//   slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+// });
 
 // 최상단으로 이동하는 버튼
 const toTopEl = document.querySelector("#to-top");

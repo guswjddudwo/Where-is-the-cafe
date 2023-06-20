@@ -80,7 +80,7 @@ height: 210px;
 top: 100px;
 z-index: 999;
 opacity: 0;
-visibility: hidden;
+visibility: visible;
 background-color: #ffffff;
 }
 
