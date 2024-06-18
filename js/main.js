@@ -74,7 +74,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// 지도!!!!!!!!!!11
+// 지도
 
 // 마커를 담을 배열입니다
 var markers = [];
