@@ -1,217 +1,199 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;900&family=Pangolin&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;900&family=Pangolin&family=Roboto:wght@500;900&display=swap"
-    rel="stylesheet" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-<!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/main.css" />
-  <!--Swiper.js 연결 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- ScrollToPlugin 연결 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- 지도api -->
-  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	6257cf9ebbd2427d03704862a78d108c&libraries=services"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="./js/main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
 
-  <title>Where is cafe?</title>
-</head>
+    <!-- JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9K9G8Bf7v4GkKc0TQf4Gd2K4p6fTA5r9z5qzB1nP4P5n7pDe1S5i5V7"
+      crossorigin="anonymous"
+    ></script>
 
-<body>
-  <header>
-    <div class="inner">
-      <a href="/" class="logo">Where?</a>
-      <nav class="gnb">
-        <ul class="main-menu">
-          <li>
-            <a href="javascript:void(0)">CAFE TYPE</a>
-            <ul class="sub-menu">
-              <li><a href="javascript:void(0)">분위기</a></li>
-              <li><a href="javascript:void(0)">커피 종류</a></li>
-              <li><a href="javascript:void(0)">디저트</a></li>
-              <li><a href="javascript:void(0)">베이커리</a></li>
-            </ul>
+    <!-- Swiper.js 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- ScrollToPlugin 연결 -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"
+      integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- 사용자 정의 스크립트 -->
+    <script src="./js/main.js" defer></script>
+
+    <title>cafe moamoa</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="/" class="logo">CAFE MOAMOA</a>
+
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">coffee</a>
           </li>
-          <li>
-            <a href="javascript:void(0)">REVIEW</a>
-            <ul class="sub-menu">
-              <li><a href="javascript:void(0)"> Best Reviw</a></li>
-              <li><a href="javascript:void(0)"> Reviw 쓰기</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">mood</a>
           </li>
-          <li>
-            <a href="javascript:void(0)">DIARY</a>
-            <ul class="sub-menu">
-              <li><a href="javascript:void(0)"> 다이어리 쓰기</a></li>
-              <li><a href="javascript:void(0)"> 작성 방법</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#">dessert</a>
           </li>
-          <li>
-            <a href="javascript:void(0)">NOTCE</a>
-            <ul class="sub-menu">
-              <li><a href="javascript:void(0)"> New cafe</a></li>
-              <li><a href="javascript:void(0)"> 안내사항</a></li>
-            </ul>
-          </li>
-          
         </ul>
-      </nav>
-      <!-- 메뉴 버튼 -->
-      <div class="btn">
-        <span class="material-symbols-rounded">local_cafe</span>
-        <span class="material-symbols-rounded">login</span>
-        <span class="material-symbols-rounded">search</span>
-      </div>
-    </div>
-  </header>
-
-  <!-- contents 1 -->
-  <section class="main">
-    <div class="inner">
-    </div>
-    <div class="image__item">
-      <!-- <img src="/images/logo.png" alt="logo" /> -->
-      <!-- <img src="/images/visual1.jpg" alt="bg"/> -->
-    </div>
-  </section>
-
-  <!-- contents 2 -->
-  <section class="cafe__contents">
-    <div class="inner">
-      <div class="title">
-        <h4>Best Place</h4>      
-        <span class="material-symbols-rounded">add</span>
-      </div>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img src="/images/place_slide_1.jpg" alt="카페" />            
-            <img src="/images/place_slide_1-1.jpg" alt="카페" />            
-          </div>
-          <div class="swiper-slide">
-            <img src="/images/place_slide_2.jpg" alt="카페" />
-            <img src="/images/place_slide_2-1.jpg" alt="카페" />
-          </div>
-          <div class="swiper-slide">
-            <img src="/images/place_slide_3.jpg" alt="카페" />
-            <img src="/images/place_slide_3-1.jpg" alt="카페"/>
-          </div>               
+        <!-- icon 버튼 -->
+        <div class="btn">
+          <span class="material-symbols-rounded"> person </span>
+          <span class="material-symbols-rounded">search</span>
         </div>
       </div>
-    <div class="swiper-pagination"></div>
-      
-    <div class="swiper-button-prev">
-      <span class="material-symbols-rounded">arrow_left</span>
-    </div>
-    <div class="swiper-button-next">
-      <span class="material-symbols-rounded">arrow_right</span>    
-    </div>     
-      </div>
-  </section>
+    </header>
 
+    <!-- contents 1 -->
+    <section class="main">
+      <div class="inner">
+        <div class="icon-text-group">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12 2C7.589 2 4 5.589 4 9.995C3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12c0-4.411-3.589-8-8-8m0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4s-1.79 4-4 4"
+              />
+            </svg>
+            <span>구월동 주변 <br />커피 맛집을 모아모아.</span>
+          </div>
 
-  <section class="new">
-    <div class="inner">
-      <div class="title">
-        <h4>Cafe Such</h4>      
-      </div>
-      <div class="map_wrap">
-        <div id="map"></div>
-    
-        <div id="menu_wrap" class="bg_white">
-            <div class="option">
-                <div>
-                    <form onsubmit="searchPlaces(); return false;">
-                        키워드 : <input type="text" value="송도 카페" id="keyword"/> 
-                        <button type="submit">검색하기</button> 
-                    </form>
-                </div>
+          <div class="main-more">
+            <span class="more">전체보기</span>
+            <span class="material-symbols-rounded"> trending_flat </span>
+          </div>
+        </div>
+
+        <!-- img -->
+        <div class="main-img-container">
+          <div class="main-img-item">
+            <div class="img-with-text">
+              <img
+                src="./images/main-1.png"
+                alt="카페"
+                width="381"
+                height="282"
+              />
+              <span class="text-overlay">#커피맛집</span>
             </div>
-            <hr>
-            <ul id="placesList"></ul>
-            <div id="pagination"></div>
-        </div>
-    </div>
-    </div>
-  </section>
-
-
-  <!-- 다이어리 -->
-  <section class="diary">
-    <div class="inner">
-      <div class="content">
-        <img src="./images/content_3.jpg" alt="diary">
-      </div>
-      <div class="text__box">
-        <div class="text__content">
-          <h4>나만의 다이어리</h4>
-          <p>카페 다이어리를 쓰며<br>나만의 취향을 기록하고 <br>공유해주세요</p>
           </div>
-          <div class="btn__group">
-            <input type="button" value="다이어리 쓰러가기"> 
-            <input type="button" value="친구들에게 공유"> 
+
+          <div class="main-img-item">
+            <div class="img-with-text">
+              <img
+                src="./images/main-2.png"
+                alt="카페"
+                width="381"
+                height="282"
+              />
+              <span class="text-overlay">#분위기 맛집</span>
+            </div>
+          </div>
+
+          <div class="main-img-item">
+            <div class="img-with-text">
+              <img
+                src="./images/main-3.png"
+                alt="카페"
+                width="381"
+                height="282"
+              />
+              <span class="text-overlay">#디저트 맛집</span>
+            </div>
           </div>
         </div>
-    </div>
-  </section>
 
+        <!-- slide -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-text">
+                <span>EVENT</span>
+                <span>뜨개카페 in 성수 오픈 기념 20% 할인</span>
+                <a href="#">자세히보기</a>
+              </div>
+              <img src="./images/main-slide1.png" width="216" alt="Image 1" />
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-text">
+                <span>EVENT</span>
+                <span>뜨개카페 in 성수 오픈 기념 20% 할인</span>
+                <a href="#">자세히보기</a>
+              </div>
+              <img src="./images/main-slide2.png" width="216" alt="Image 1" />
+            </div>
+
+            <div class="swiper-slide">
+              <div class="swiper-text">
+                <span>EVENT</span>
+                <span>뜨개카페 in 성수 오픈 기념 20% 할인</span>
+                <a href="#">자세히보기</a>
+              </div>
+              <img src="./images/main-slide3.png" width="216" alt="Image 1" />
+            </div>
+
+            <div class="swiper-pagination">...</div>
+          </div>
         </div>
-    </div>
-  </section>
-
-
-  <!-- 리뷰 -->
-
-  <footer>
-    <div class="inner">
-      <ul class="menu">
-        <li><a href="javascript:void(0)" class="orange">개인정보처리방침</a></li>
-        <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-        <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-        <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
-      </ul>
-      <div class="btn-group">
-        <a href="javascript:void(0)" class="btn btn--wite">찾아오시는 길</a>
-        <a href="javascript:void(0)" class="btn btn--wite">광고문의</a>
-        <a href="javascript:void(0)" class="btn btn--wite">사이트 맵</a>
       </div>
-      <div class="info">
-        <span>사업자등록번호 123-45-678901</span>
-        <span>(주)카페 어디가</span>
-        <span>TEL : 02) 1234-5678 / FAX : 02) 1234-5678</span>
-        <span>개인정보 책임자 : 김현정</span>
-      </div>
-      <p class="copyright">
-        <!-- HTML 특수문자 -->
-        <!-- &lt;(<)&gt;(>) &nbsp; ( ) &copy; -->
-        &copy; <span class="this-year"></span>
-        star Coffee company .All Rights Reaerved.  
-      </p>      
-    </div>
-  </footer>
-  
-  
-  
-  <!-- SCROLL TO TOP -->
-  <div id="to-top">
-      <p>TOP</p>
-    <!-- </a> -->
-  </div>
-</body>
-
+    </section>
+  </body>
 </html>
