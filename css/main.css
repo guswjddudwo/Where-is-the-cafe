@@ -25,7 +25,7 @@ header {
   justify-content: space-around;
   align-items: center;
   line-height: 80px;
-  padding-bottom: 140px; /* 헤더 아래쪽에 140px의 패딩을 추가 */
+  padding-bottom: 140px;
 }
 
 header .logo {
@@ -65,7 +65,7 @@ header .logo {
   color: gray;
 }
 
-/* section 1  */
+/* main  */
 
 .main {
   position: relative;
@@ -134,22 +134,24 @@ header .logo {
   font-weight: bold;
   color: #ffff;
 }
-
+.material-symbols-rounded {
+  cursor: pointer;
+}
 .swiper-container {
-  width: 1192px;
+  width: 1183px;
   height: 260px;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .swiper-wrapper {
-  /* width: 1192px; */
   position: relative;
   display: flex;
 }
 
 .swiper-slide {
   width: 100%;
+  padding: 0 50px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -179,4 +181,141 @@ header .logo {
   z-index: 9;
   background-color: #ff3232;
   border-radius: 50px;
+}
+
+/* coffee-taste-section */
+
+.coffee-taste {
+  position: relative;
+  margin-top: 55%;
+}
+
+.coffee-taste__item,
+.cafe-view__item {
+  width: 100%;
+  display: flex;
+}
+
+.coffee-details-wrapper {
+  width: 60%;
+  position: absolute;
+  margin: 0 auto;
+  left: 80px;
+  bottom: 80px;
+}
+
+/* ul */
+.coffee-features {
+  color: #ffffff;
+}
+.coffee-features li:first-child {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 16px;
+  font-weight: none;
+  background-color: #ffffff44;
+  border-radius: 13px;
+  align-items: center;
+}
+
+.coffee-features li + li {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.coffee-features li + li + li {
+  font-size: 16px;
+}
+
+.coffee-details-wrapper > span {
+  position: absolute;
+  left: 70%;
+  top: 60px;
+  margin: 0 auto;
+  font-size: 40px;
+  color: #ffffff;
+  border: 1px solid #ffffff83;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* 4개사진 */
+.coffee-taste-group-wrapper,
+.cafe-view-group-wrapper {
+  width: 40%;
+  display: flex;
+  gap: 15%;
+  margin: 0 auto;
+}
+
+.coffee-taste-group-wrapper img,
+.cafe-view-group-wrapper img {
+  width: 310px;
+  height: 310px;
+}
+.coffee-taste-group-upper .image-container,
+.coffee-taste-group-lower .image-container,
+.cafe-view-group-upper .image-container,
+.cafe-view-group-lower .image-container {
+  padding-top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-taste-group-upper .image-container span,
+.coffee-taste-group-lower .image-container span,
+.cafe-view-group-upper .image-container span,
+.cafe-view-group-lower .image-container span {
+  padding-top: 10%;
+  font-size: 18px;
+}
+
+/* cafe-view */
+.cafe-view {
+  position: relative;
+  margin-top: 50px;
+}
+.cafe-view-main > img {
+  width: 910px;
+}
+.cafe-details-wrapper {
+  width: 60%;
+  position: absolute;
+  bottom: 80px;
+}
+
+.cafe-features {
+  color: #ffffff;
+  margin-left: 5%;
+}
+.cafe-features li:first-child {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 16px;
+  font-weight: none;
+  background-color: #ffffff44;
+  border-radius: 13px;
+  align-items: center;
+}
+
+.cafe-features li + li {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.cafe-features li + li + li {
+  font-size: 16px;
+}
+
+.cafe-details-wrapper > span {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  margin: 0 auto;
+  font-size: 40px;
+  color: #ffffff;
+  border: 1px solid #ffffff83;
+  border-radius: 50%;
+  padding: 5px;
 }
